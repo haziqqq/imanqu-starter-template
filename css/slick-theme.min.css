@@ -55,12 +55,11 @@
   font-size: 20px;
   line-height: 1;
   opacity: 0.75;
-  border-radius: 20px;
-  color: black;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.slick-prev {
+/* .slick-prev {
   left: -25px;
 }
 [dir="rtl"] .slick-prev {
@@ -85,7 +84,7 @@
 }
 [dir="rtl"] .slick-next:before {
   content: "←";
-}
+} */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
@@ -131,10 +130,11 @@
 }
 .slick-dots li button:before {
   font-family: slick;
-  font-size: 40px;
+  font-size: 35px;
+  margin-top: 25px;
   line-height: 20px;
   position: absolute;
-  top: 10px;
+  top: 0;
   left: 0;
   width: 20px;
   height: 20px;

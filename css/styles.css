@@ -9,6 +9,12 @@
   border-radius: 53px;
 }
 
+.btn-stock:hover {
+  background-color: #cf531d !important;
+  width: 150px;
+  border-radius: 53px;
+}
+
 .navbar .nav-item .nav-link {
   margin: 0 12px;
   font-weight: 500;
@@ -88,7 +94,6 @@
     font-size: 18px;
   }
 }
-
 /* End Benefit */
 
 /* Program */
@@ -100,8 +105,28 @@
 /* End Program */
 
 /* Testimonial */
-
 .text-testimonial {
   font-size: 50px !important;
+}
+.testimonial-text {
+  font-size: calc(1.525rem + 2vw);
+  line-height: calc(3.2rem + 2vw);
+}
+
+.testimonial-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: black;
+  margin-top: 14px;
+}
+
+.testimonial-role {
+  position: absolute;
+  margin-left: 86px;
+  margin-top: 38px;
+}
+
+.testimonial-content {
+  margin-left: 20px;
 }
 /* End Testimonial */

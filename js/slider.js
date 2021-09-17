@@ -3,7 +3,7 @@ $('.slider').slick({
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     responsive: [
         {
             breakpoint: 1024,
@@ -11,21 +11,24 @@ $('.slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true
+                dots: true,
+                arrows: false
             }
         },
         {
             breakpoint: 600,
             settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 2,
+                arrows: false
             }
         },
         {
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                arrows: false
             }
         }
         // You can unslick at a given breakpoint now by adding:
