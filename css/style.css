@@ -130,3 +130,18 @@
   margin-left: 20px;
 }
 /* End Testimonial */
+
+/* Footer */
+.footer-text {
+  font-weight: 300;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-copyright {
+  background-color: rgb(20, 20, 20);
+}
+/* End Footer */
