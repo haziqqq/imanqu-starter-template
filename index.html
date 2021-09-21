@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="css/slicknav.min.css">
 	
 	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -56,7 +56,6 @@
 			padding: 10px;
 			left: 0;
 		}
-
 	</style>
 
 	
@@ -67,33 +66,33 @@
 	<section class="navbar mb-5">
 		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-4">
 			<div class="container">
-			<img src="images/brand.svg" width="160px" class="mt-2">
+			<img src="images/brand.svg" width="160px" class="mt-2">	
 			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav ms-auto text-uppercase">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#benefit">Manfaat</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#program">Program</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#product">Produk</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#member">Member</a>
-					</li>
-					<li class="nav-item">
-						<button type="button" class="btn btn-stock text-white">DAFTAR</button>
-					</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#benefit">Manfaat</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#program">Program</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="list-product.html">Produk</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#member">Member</a>
+						</li>
+						<li class="nav-item">
+							<button type="button" class="btn btn-stock text-white">DAFTAR</button>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -122,7 +121,7 @@
 	<!-- End Slider -->
 
 	<!-- Sponsor  -->
-	<section class="sponsor pt-5 my-5 pb-5" id="sponsor">
+	<section class="sponsor py-5" id="sponsor">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="d-flex justify-content-center">
@@ -135,17 +134,17 @@
 				</div>
 			</div>
 			<div class="container mt-4">
-				<div class="row mt-2">
-					<div class="col-lg-3 col-md-6 d-flex justify-content-center">
+				<div class="slider row mt-2">
+					<div class="col-lg-12 col-md-6 d-flex justify-content-center">
 						<img src="images/landing/mitra-1.svg">
 					</div>
-					<div class="col-lg-3 col-md-6 d-flex justify-content-center">
+					<div class="col-lg-12 col-md-6 d-flex justify-content-center">
 						<img src="images/landing/mitra-2.svg">
 					</div>
-					<div class="col-lg-3 col-md-6 d-flex justify-content-center">
+					<div class="col-lg-12 col-md-6 d-flex justify-content-center">
 						<img src="images/landing/mitra-3.svg">
 					</div>
-					<div class="col-lg-3 col-md-6 d-flex justify-content-center">
+					<div class="col-lg-12 col-md-6 d-flex justify-content-center">
 						<img src="images/landing/mitra-4.svg">
 					</div>	
 				</div>
@@ -212,17 +211,23 @@
 	<section id="benefit" class="benefit mt-3 py-5">
 		<div class="container">
 			<div class="row">
-				<div class="benefit-item col-lg-6 d-flex justify-content-center">
-					<img class="mt-5" src="/images/landing/benefit-1.jpg" width="100%">
-					<h1 class="benefit-title text-white">Manfaat</h1>
-					<p class="benefit-text text-white px-5">Menerapkan sunnah Rasul melalui menulis wahyu. Mensucikan jiwa dengan menulis Mushaf.</p>
+				<div class="col-lg-6 d-flex justify-content-center mb-4">
+					<div class="benefit-item card bg-dark text-white">
+						<img src="images/landing/benefit-1.jpg" class="card-img" alt="...">
+						<div class="card-img-overlay text-center my-5">
+						  <h1 class="card-title">Rohani</h1>
+						  <p class="benefit-content card-text text-white mt-4">Menerapkan sunnah Rasul melalui menulis wahyu. Mensucikan jiwa dengan menulis mushaf.</p>
+						</div>
+					</div>
 				</div>
-				<div class="benefit-item col-lg-6 d-flex justify-content-center">
-					<img class="mt-5" src="/images/landing/benefit-2.jpg" width="100%">
-					<h1 class="benefit-title text-white">Jasmani</h1>
-					<p class="benefit-text text-white px-5">Meningkatkan kecerdasan kinestetik. Menjadikan menulis Mushaf sebagai terapi fisik dan psikis
-						Meningkatkan kecerdasan berbahasa dengan menulis mushaf
-					</p>
+				<div class="col-lg-6 d-flex justify-content-center mb-4">
+					<div class="benefit-item card bg-dark text-white">
+						<img src="images/landing/benefit-2.jpg" class="card-img" alt="...">
+						<div class="card-img-overlay text-center my-5">
+						  <h1 class="card-title">Jasmani</h1>
+						  <p class="benefit-content card-text text-white mt-4">Meningkatkan kecerdasan kinestetik dengan menulis Mushaf. Menjadikan menulis Mushaf sebagai terapi fisik dan psikis. Meningkatkan kecerdasan berbahasa dengan menulis Mushaf</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -301,7 +306,7 @@
 						<img src="images/landing/produk-1.png" class="card-img-top">
 						<div class="card-body text-center">
 							<h5 class="card-title">Mushaf-Qu 30 Juz</h5>
-							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Lihat</a>
+							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Beli</a>
 						</div>
 					</div>
 				</div>
@@ -310,7 +315,7 @@
 						<img src="images/landing/produk-2.png" class="card-img-top">
 						<div class="card-body text-center">
 							<h5 class="card-title">Mushaf-Qu Juz Amma</h5>
-							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Lihat</a>
+							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Beli</a>
 						</div>
 					</div>
 				</div>
@@ -319,7 +324,7 @@
 						<img src="images/landing/produk-3.png" class="card-img-top">
 						<div class="card-body text-center">
 							<h5 class="card-title">Pulpen Premium</h5>
-							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Lihat</a>
+							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Beli</a>
 						</div>
 					</div>
 				</div>
@@ -328,7 +333,7 @@
 						<img src="images/landing/produk-4.png" class="card-img-top">
 						<div class="card-body text-center">
 							<h5 class="card-title">Refill Pulpen Premium</h5>
-							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Lihat</a>
+							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Beli</a>
 						</div>
 					</div>
 				</div>
@@ -337,7 +342,7 @@
 						<img src="images/landing/produk-5.png" class="card-img-top">
 						<div class="card-body text-center">
 							<h5 class="card-title">Pulpen Biasa</h5>
-							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Lihat</a>
+							<a href="#" class="btn btn-stock text-white text-uppercase mt-3">Beli</a>
 						</div>
 					</div>
 				</div>
@@ -430,7 +435,7 @@
 							<li class="list-group-item"><i class="fa fa-check-circle"></i> Berlaku Satu Tahun</li>
 						</ul>
 						<div class="card-body">
-							<a href="#" class="btn btn-stock d-flex w-100 justify-content-center text-white">Selengkapnya</a>
+							<a href="#" class="btn btn-stock-2 d-flex w-100 justify-content-center text-stock">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
@@ -466,7 +471,7 @@
 							<li class="list-group-item"><i class="fa fa-check-circle"></i> Berlaku Satu Tahun</li>
 						</ul>
 						<div class="card-body">
-							<a href="#" class="btn btn-stock d-flex w-100 justify-content-center text-white">Selengkapnya</a>
+							<a href="#" class="btn btn-stock-2 d-flex w-100 justify-content-center text-stock">Selengkapnya</a>
 						</div>
 					</div>
 				</div>
