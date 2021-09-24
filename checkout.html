@@ -53,7 +53,7 @@
 	<!-- Eshop StyleSheet -->
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<link rel="stylesheet" href="css/resets.css">
-	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+	<link rel="stylesheet" href="css/responsive.css">
 
 	<style>
 		.product-title{
@@ -74,6 +74,11 @@
 			position: absolute;
 			top: 32px;
 			right: 15px;
+		}
+
+		.form-check-input:checked{
+			background-color: #f26326 !important;
+			border-color: #f26326 !important;
 		}
 
 	</style>
@@ -123,7 +128,7 @@
 	</section>
 	<!--/ End Navbar -->
 
-	<!-- Product Detail Section -->
+	<!-- Checkout Section -->
 	<section class="list-product py-5">
 		<div class="container my-5">
             <div class="row pt-3">
@@ -182,6 +187,39 @@
 							</div>
 							<hr class="ml-3">
 							<!-- End Modal -->
+
+							<!-- Produk Dipesan -->
+							<div class="row mt-4">
+								<div class="d-flex">
+									<div class="card border-0 w-100">
+										<div class="card-body ml-3">
+											<div class="row table-bordered table-responsive">
+												<table class="table">
+													<thead>
+														<tr>
+															<th width="60%">Produk Dipesan</th>
+															<th width="15%">Harga Satuan</th>
+															<th width="10%">Jumlah</th>
+															<th width="15%" class="text-end">Subtotal Produk</th>
+														</tr>
+													</thead>
+													<tbody>
+													  	<tr>
+															<td><p class="card-text">Mushaf-Qu 30 Juz</p></td>
+															<td><p class="card-text">Rp 500.000</p></td>
+															<td><p class="card-text">4</p></td>
+															<td class="text-end"><p class="card-text">Rp 2.000.000</p></td>
+													  	</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Produk Dipesan -->
+
+							<!-- Opsi Pengiriman -->
 							<div class="row mt-4">
 								<h5 class="address card-title ml-3">Opsi Pengiriman</h5>
 								<div class="d-flex">
@@ -232,6 +270,9 @@
 									</div>
 								</div>
 							</div>
+							<!-- End Opsi Pengiriman -->
+
+							<!-- Metode Pembayaran -->
 							<div class="row mt-4">
 								<div class="d-flex">
 									<div class="card w-100 ml-3 border-0">
@@ -247,6 +288,9 @@
 									</div>
 								</div>
 							</div>
+							<!-- End Metode Pembayaran -->
+
+							<!-- Catatan -->
 							<div class="row mt-5">
 								<div class="d-flex">
 									<div class="card w-100 ml-3 border-0">
@@ -255,6 +299,9 @@
 									</div>
 								</div>
 							</div>
+							<!-- End Catatan -->
+
+							<!-- Kupon -->
 							<div class="row mt-5">
 								<div class="d-flex">
 									<div class="card w-100 ml-3 border-0">
@@ -266,6 +313,9 @@
 									</div>
 								</div>
 							</div>
+							<!-- End Kupon -->
+
+							<!-- Total Produk -->
 							<div class="row mt-5">
 								<div class="col-lg-12">
 									<h6 class="card-text text-muted mb-3 ml-3">Subtotal Produk</h6>
@@ -280,11 +330,15 @@
 									<h3 style="font-weight: 500;" class="card-text text-end my-3 ml-5">Rp 2.040.000</h3>
 								</div>
 							</div>
+							<!-- End Total Produk -->
+
 							<hr class="ml-3">
 							<div class="row">
-								<div class="d-flex">
-									<button type="button" class="w-100 ml-3 btn btn-stock-buy text-white">Buat Pesanan</button>
-								</div>
+								<form action="invoice.html">
+									<div class="d-flex">
+										<button type="submit" class="w-100 ml-3 btn btn-stock-buy text-white">Buat Pesanan</button>
+									</div>
+								</form>
 							</div>
                         </div>
                     </div>
