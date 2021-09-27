@@ -48,6 +48,8 @@
 	<link rel="stylesheet" href="css/owl-carousel.css">
 	<!-- Slicknav -->
 	<link rel="stylesheet" href="css/slicknav.min.css">
+	<!-- Floating Button -->
+	<link rel="stylesheet" href="css/floating-wpp.css">
 
 	<!-- Eshop StyleSheet -->
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -55,7 +57,7 @@
 	<link rel="stylesheet" href="css/responsive.css">
 
 	<style>
-	
+		
 	</style>
 
 
@@ -115,6 +117,9 @@
 	</section>
 	<!--/ End Navbar -->
 
+	<!-- Menu Section -->
+	
+	<!-- End Section -->
 	<!-- Slider -->
 	<section class="hero-slider pt-5">
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -584,6 +589,7 @@
 		</div>
 	</footer>
 	<!-- End Section -->
+	<div class="mb-2 mr-3" id="myButton"></div>
 
 
 	<!-- JavaScript Bundle with Popper -->
@@ -626,6 +632,24 @@
 	<script src="js/easing.js"></script>
 	<!-- Active JS -->
 	<script src="js/active.js"></script>
+	<!-- Floating Button JS -->
+	<script src="js/floating-wpp.js"></script>
+	<script>
+		$(function () {
+			$('#myButton').floatingWhatsApp({
+				phone: '+6285156157933',
+				popupMessage: 'Ada yang bisa kami bantu?',
+				message: "",
+				position: 'right',
+				showPopup: true,
+				showOnIE: false,
+				headerTitle: 'Customer Service',
+				headerColor: '#25d366',
+				backgroundColor: '#25d366',
+				buttonImage: '<img src="/images/whatsapp.svg" />'
+			})
+		})
+	</script>
 </body>
 
 </html>
