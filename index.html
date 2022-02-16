@@ -57,14 +57,10 @@
 	<link rel="stylesheet" href="css/responsive.css">
 
 	<style>
-		@media screen and (max-width: 414px){
-			.navbar-mobile {
-				position: fixed !important;
-				right: 0 !important;
-				bottom: 0 !important;
-				left: 0 !important;
-				z-index: 1030 !important;
-			}			
+		@media (min-width: 640px) {
+			.cart-xl {
+				display: hidden !important;
+			}
 		}
 	</style>
 
@@ -78,52 +74,9 @@
 		<div class="container">
 			<img src="images/brand.svg" width="160px" class="mt-2">
 			<a href="cart.html" type="button" class="navbar-toggler border-0" style="margin-left: auto;"><i style="font-size: 30px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>			
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto text-uppercase">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#benefit">Manfaat</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Program
-						</a>
-						<ul class="dropdown-menu mt-2 ml-3" aria-labelledby="navbarDropdown">
-							<li><a class="dropdown-item" href="#">Event</a></li>
-							<li><a class="dropdown-item" href="infaq.html">Infaq</a></li>
-						</ul>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="list-product.html">Produk</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#member">Member</a>
-					</li>
-					<li class="nav-item">
-						<button type="button" class="btn btn-stock text-white">DAFTAR</button>
-					</li>
-					<li class="nav-item">
-						<!-- <a href="cart.html" type="button" class="border-0 mr-2" style="margin-left: auto;"><i style="font-size: 30px; color: black;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a> -->
-						<a class="nav-link" href="cart.html"><i style="font-size: 25px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<nav class="navbar-mobile bg-light p-3">
-		<div class="container">
-			<img src="images/brand.svg" width="160px" class="mt-2">
-			<button class="navbar-toggler border-0 mr-2" type="button" data-bs-toggle="collapse"
-				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-				aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav ms-auto text-uppercase">
 					<li class="nav-item">
@@ -154,7 +107,6 @@
 						<button type="button" class="btn btn-stock text-white">DAFTAR</button>
 					</li>
 					<li class="nav-item">
-						<!-- <a href="cart.html" type="button" class="border-0 mr-2" style="margin-left: auto;"><i style="font-size: 30px; color: black;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a> -->
 						<a class="nav-link" href="cart.html"><i style="font-size: 25px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
 					</li>
 				</ul>
