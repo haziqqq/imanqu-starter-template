@@ -52,12 +52,20 @@
 	<link rel="stylesheet" href="css/floating-wpp.css">
 
 	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/resets.css">
 	<link rel="stylesheet" href="css/responsive.css">
 
 	<style>
-		
+		@media screen and (max-width: 414px){
+			.navbar-mobile {
+				position: fixed !important;
+				right: 0 !important;
+				bottom: 0 !important;
+				left: 0 !important;
+				z-index: 1030 !important;
+			}			
+		}
 	</style>
 
 
@@ -66,62 +74,97 @@
 
 <body class="js">
 	<!-- Navbar -->
-	<section class="navbar mb-5">
-		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light p-4">
-			<div class="container">
-				<img src="images/brand.svg" width="160px" class="mt-2">
-				<a href="cart.html" type="button" class="navbar-toggler border-0" style="margin-left: auto;"><i style="font-size: 30px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
-				<button class="navbar-toggler border-0 mr-2" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto text-uppercase">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#benefit">Manfaat</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Program
-							</a>
-							<ul class="dropdown-menu mt-2 ml-3" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Event</a></li>
-								<li><a class="dropdown-item" href="infaq.html">Infaq</a></li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="list-product.html">Produk</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#member">Member</a>
-						</li>
-						<li class="nav-item">
-							<button type="button" class="btn btn-stock text-white">DAFTAR</button>
-						</li>
-						<li class="nav-item">
-							<!-- <a href="cart.html" type="button" class="border-0 mr-2" style="margin-left: auto;"><i style="font-size: 30px; color: black;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a> -->
-							<a class="nav-link" href="cart.html"><i style="font-size: 25px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
-						</li>
-					</ul>
-				</div>
+	<nav class="navbar shadow-sm fixed-top navbar-expand-lg navbar-light bg-light p-4">
+		<div class="container">
+			<img src="images/brand.svg" width="160px" class="mt-2">
+			<a href="cart.html" type="button" class="navbar-toggler border-0" style="margin-left: auto;"><i style="font-size: 30px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>			
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto text-uppercase">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#benefit">Manfaat</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Program
+						</a>
+						<ul class="dropdown-menu mt-2 ml-3" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Event</a></li>
+							<li><a class="dropdown-item" href="infaq.html">Infaq</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="list-product.html">Produk</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#member">Member</a>
+					</li>
+					<li class="nav-item">
+						<button type="button" class="btn btn-stock text-white">DAFTAR</button>
+					</li>
+					<li class="nav-item">
+						<!-- <a href="cart.html" type="button" class="border-0 mr-2" style="margin-left: auto;"><i style="font-size: 30px; color: black;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a> -->
+						<a class="nav-link" href="cart.html"><i style="font-size: 25px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
+					</li>
+				</ul>
 			</div>
-		</nav>
-	</section>
+		</div>
+	</nav>
+	<nav class="navbar-mobile bg-light p-3">
+		<div class="container">
+			<img src="images/brand.svg" width="160px" class="mt-2">
+			<button class="navbar-toggler border-0 mr-2" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto text-uppercase">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#benefit">Manfaat</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Program
+						</a>
+						<ul class="dropdown-menu mt-2 ml-3" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Event</a></li>
+							<li><a class="dropdown-item" href="infaq.html">Infaq</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="list-product.html">Produk</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#member">Member</a>
+					</li>
+					<li class="nav-item">
+						<button type="button" class="btn btn-stock text-white">DAFTAR</button>
+					</li>
+					<li class="nav-item">
+						<!-- <a href="cart.html" type="button" class="border-0 mr-2" style="margin-left: auto;"><i style="font-size: 30px; color: black;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a> -->
+						<a class="nav-link" href="cart.html"><i style="font-size: 25px;" class="fa fa-shopping-cart"><span style="font-size: 12px; background-color: #f26326 !important;" class="badge bg-secondary">99</span></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	<!--/ End Navbar -->
 
-	<!-- Menu Section -->
-	
-	<!-- End Section -->
 	<!-- Slider -->
-	<section class="hero-slider pt-5">
+	<!-- <section class="hero-slider pt-5">
 		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -139,12 +182,12 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-	</section>
+	</section> -->
 	<!-- End Slider -->
 
 	<!-- Sponsor  -->
-	<section class="sponsor py-5" id="sponsor">
-		<div class="container-fluid">
+	<section class="sponsor my-5 py-5" id="sponsor">
+		<div class="container-fluid mt-5">
 			<div class="row">
 				<div class="d-flex justify-content-center">
 					<h1>Mitra Kami</h1>
@@ -200,29 +243,21 @@
 						</div>
 					</div>
 					<div class="row mt-3 text-about-2">
-						<div class="col-lg-3">
-							<div class="col-sm-3 mb-3">
-								<h3>4K</h3>
-								<p class="mt-2">Mitra Bergabung</p>
-							</div>
+						<div class="col-6 col-lg-3 mt-4">
+							<h3>4K</h3>
+							<p class="mt-2">Mitra Bergabung</p>
 						</div>
-						<div class="col-lg-3">
-							<div class="col-sm-3 mb-3">
-								<h3>2</h3>
-								<p class="mt-2">Program Utama</p>
-							</div>
+						<div class="col-6 col-lg-3 mt-4">
+							<h3>2</h3>
+							<p class="mt-2">Program Utama</p>
 						</div>
-						<div class="col-lg-3">
-							<div class="col-sm-3 mb-3">
-								<h3>100+</h3>
-								<p class="mt-2">Ikut Program</p>
-							</div>
+						<div class="col-6 col-lg-3 mt-4">
+							<h3>100+</h3>
+							<p class="mt-2">Ikut Program</p>
 						</div>
-						<div class="col-lg-3">
-							<div class="col-sm-3 mb-3">
-								<h3>33</h3>
-								<p class="mt-2">Seluruh Indonesia</p>
-							</div>
+						<div class="col-6 col-lg-3 mt-4">
+							<h3>33</h3>
+							<p class="mt-2">Seluruh Indonesia</p>
 						</div>
 					</div>
 				</div>
@@ -400,7 +435,7 @@
 						<div class="row mb-4">
 							<div class="testimonial-content d-flex col-lg-12">
 								<img src="images/landing/testimoni-1.jpg" class="rounded-circle" width="70px">
-								<span class="ml-3 testimonial-name">Haziq Shahrahman</span>
+								<span class="testimonial-name">Haziq Shahrahman</span>
 								<p class="testimonial-role text-muted">Content Creator</p>
 							</div>
 						</div>
@@ -456,7 +491,7 @@
 			</div>
 			<div class="row mt-4">
 				<div class="col-lg-4 d-flex justify-content-center mb-5">
-					<div class="card">
+					<div class="p-3 card">
 						<div class="card-body">
 							<h6 class="card-title">Rp 2.500.000</h6>
 							<h3 class="card-title mt-3">Silver</h3>
@@ -476,7 +511,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 d-flex justify-content-center mb-5">
-					<div class="card">
+					<div class="p-3 card">
 						<div class="card-body">
 							<h6 class="card-title">Rp 5.000.000</h6>
 							<h3 class="card-title mt-3">Gold</h3>
@@ -496,7 +531,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 d-flex justify-content-center mb-5">
-					<div class="card">
+					<div class="p-3 card">
 						<div class="card-body">
 							<h6 class="card-title">Rp 10.000.000</h6>
 							<h3 class="card-title mt-3">Platinum</h3>
@@ -599,8 +634,8 @@
 	<!-- Jquery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- Slick Slider -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-	<script src="js/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="js/slick.min.js"></script> -->
 	<script src="js/slider.js"></script>
 	<script src="js/jquery-migrate-3.0.0.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
